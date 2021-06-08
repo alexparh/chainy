@@ -1,0 +1,50 @@
+{
+  "name": "chainy",
+  "version": "0.1.0",
+  "description": "Http client library for node js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexparh/chainy.git"
+  },
+  "author": "Oleksandr Parkhomenko <shasha.parh@gmail.com>",
+  "keywords": [
+    "ajax",
+    "api",
+    "async",
+    "await",
+    "cancel",
+    "client",
+    "http",
+    "https",
+    "promise",
+    "promises",
+    "request",
+    "requests",
+    "response",
+    "responses",
+    "rest",
+    "retry",
+    "timeout",
+    "xhr",
+    "xmlhttprequest"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexparh/chainy/issues"
+  },
+  "homepage": "https://github.com/alexparh/chainy#readme",
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "formidable": "^1.2.2",
+    "object-to-formdata": "^4.1.0",
+    "semver": "^7.3.5",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
