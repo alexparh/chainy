@@ -145,8 +145,6 @@ function Requst(url, method) {
       headers: this.headers,
     };
 
-    console.log(options);
-
     const promisifyRequest = () => {
       return new Promise((resolve, reject) => {
         const req = _http
@@ -165,7 +163,6 @@ function Requst(url, method) {
                 ((this.retryCallBack && this.retryCallBack(err, res)) ||
                   defaultStatusCodesToRetry.includes(res.statusCode))
               ) {
-                console.log('KEK');
                 this.retryCount--;
                 promisifyRequest()
                   .then((data) => resolve(data))
@@ -180,7 +177,6 @@ function Requst(url, method) {
               this.retryCount > 0 &&
               ((this.retryCallBack && this.retryCallBack(err, res)) || defaultErrorCodesToRetry.includes(err.code))
             ) {
-              console.log('KEK');
               this.retryCount--;
               promisifyRequest()
                 .then((data) => resolve(data))
@@ -208,7 +204,6 @@ function Requst(url, method) {
 }
 
 function Response(res, req, data) {
-  console.log('Response');
   this.headers = parseHeaders(res.rawHeaders);
   this.stastusMessage = res.statusMessage;
   this.status = res.statusCode;

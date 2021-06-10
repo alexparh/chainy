@@ -1,6 +1,6 @@
 {
   "name": "chainy-request",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Http client library for node js ",
   "main": "./src/node/indeх.js",
   "scripts": {
